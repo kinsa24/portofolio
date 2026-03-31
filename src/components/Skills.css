@@ -1,0 +1,126 @@
+.skills-section {
+  background: var(--bg-dark);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.skill-cat {
+  padding: 2rem;
+}
+
+.skill-cat-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-cat-icon {
+  font-size: 1.6rem;
+}
+
+.skill-cat-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Skill bars */
+.skill-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.skill-bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.skill-bar-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-name {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.skill-percent {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.skill-bar-track {
+  height: 6px;
+  background: var(--bg-card2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  position: relative;
+  animation: growBar 1.2s ease forwards;
+  transform-origin: left;
+}
+
+@keyframes growBar {
+  from { width: 0 !important; }
+}
+
+/* Tech badges */
+.tech-badges-section {
+  text-align: center;
+}
+
+.tech-badges-title {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: center;
+}
+
+.tech-badge {
+  padding: 0.4rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: var(--transition);
+  cursor: default;
+}
+
+.tech-badge:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: rgba(108, 99, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .skill-cat { padding: 1.5rem; }
+}
