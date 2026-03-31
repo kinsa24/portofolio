@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"homepage": "https://kinsa24/portofolio.git",
+"homepage": "https://kinsa24.github.io/portofolio",
 
 "scripts": {
   "dev": "vite",
